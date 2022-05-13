@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 1;
+    font-weight: 100;
+}
+
+body {
+    background: map-get($map:$colores , $key:color-fondo );
+    
+    display: grid;
+    background-image: linear-gradient(to right,
+            rgb(253, 217, 217),
+            rgb(246, 205, 205));
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    span{
+        font-weight: bold;
+    }
+    
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    span{
+        font-weight: bold;
+    }
+}
+
+h3{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    span{
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: bold; 
+    }
+}
+
+p{
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+img{
+    margin: 0;
+}

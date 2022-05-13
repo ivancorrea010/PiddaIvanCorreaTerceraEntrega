@@ -1,0 +1,37 @@
+footer {
+    background: $color-rojo;
+    margin-top: 6rem;
+    display: grid;
+
+    .footer-redes {
+        .ul-footer-redes {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0.7rem 0;
+
+            .li-footer-redes {
+
+                .a-footer-redes {
+                    text-decoration: none;
+                    color: white;
+                }
+                .a{
+                    @include a;
+                    @extend %a-footer
+                }
+                }
+
+            }
+        }
+    
+
+    .footer-derechos {
+        text-align: center;
+        padding: 2px;
+        font-size: 0.8rem;
+        color: white;
+        border-top: groove 1px;
+        text-shadow: 0.5px 0.5px 0.5px black;
+    }
+}

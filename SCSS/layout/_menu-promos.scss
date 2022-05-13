@@ -1,0 +1,103 @@
+.titulo {
+    @include titulo
+}
+
+div{.parrafo-menu {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem
+}}
+
+.ir-a {
+    text-align: center;
+    margin: 4rem;
+    color: map-get($map: $colores, $key:color-primario );
+    font-size: 1.55rem;
+}
+
+
+.nav-promos {
+    ul {
+        display: flex;
+        font-size: 1.5rem;
+        list-style: none;
+        justify-content: space-evenly;
+        margin: 7.5rem 0;
+
+        li {
+            text-decoration: none;
+            color: whitesmoke;
+            border: solid 1px $color-rojo;
+            background-color: $color-rojo;
+            border-radius: 0.8rem;
+            padding: 0.3rem;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: map-get($map: $colores, $key:color-hover );
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+article{
+
+.parrafo-menu{
+
+    margin:2rem 2rem 4rem 2rem;
+    text-align: center;
+}
+
+.titulo-2{
+    text-align: center;
+    color: map-get($map: $colores, $key:color-primario );
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+
+}
+.img-promos {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+
+    div {
+        margin-bottom:2rem;
+        text-align: center;
+        .img-producto {
+            @include imgProducto;
+        }
+
+        .div-titulo-producto {
+            @include divTituloProducto;
+        }
+    }
+}
+
+.div-volver-arriba {
+    text-align: center;
+    transform: translate(-1px, -1px);
+
+    margin-bottom:3rem;
+
+    &:active {
+        box-shadow: none;
+    }
+
+    .volver-arriba {
+       @include botones;
+        padding: 0.5rem;
+       
+        
+    }
+}
+}

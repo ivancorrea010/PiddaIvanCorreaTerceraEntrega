@@ -1,0 +1,62 @@
+main {
+    .p-contacto {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0rem 0 2rem;
+    }
+
+    form {
+        .div-input {
+            text-align: center;
+
+            .input {
+                border: none;
+                border-bottom: 1px solid #edf2f4;
+                font-size: 120%;
+                outline: none;
+                border: outset 0.5px grey;
+                padding: 0.5rem;
+                margin: 0.5rem;
+                border-radius: 0.5rem;
+                width: 50%;
+
+                &::placeholder {
+                    text-align: center;
+                }
+
+
+            }
+
+            .mensaje {
+                height: 8rem;
+                margin-bottom: 0.8rem;
+            }
+
+
+        }
+
+        .div-enviar {
+            text-align: center;
+            margin: 0.5rem;
+
+            .enviar {
+                background-color: map-get($map: $colores, $key:color-primario );
+                border: solid 1px black;
+                border-radius: 0.6rem;
+                padding: 0.5rem;
+                color: white;
+                transform: translate(-1px, -1px);
+                box-shadow: 2px 2px black;
+                text-shadow: 2px 2px 2px black;
+                &:active {
+                    transform: translate(0);
+                    box-shadow: none;
+
+                }
+                &:hover{
+                    background-color: map-get($map: $colores, $key:color-hover );
+                }
+            }
+        }
+    }
+}

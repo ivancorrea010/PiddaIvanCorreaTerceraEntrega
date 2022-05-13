@@ -1,0 +1,130 @@
+//seccion 1
+.seccion-bienvenida {
+    height: 100vh;
+    background-image: url("../img/Pizza.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+    .subtitulo-1 {
+        border: 2.5px ridge $color-rojo;
+        text-align: center;
+        height: max-content;
+        position: relative;
+        top: 37%;
+        color: $color-rojo;
+        background-color: rgba(170, 172, 163, 0.5);
+        text-shadow: 1px 1px 2px black;
+
+    }
+}
+
+//seccion info Adicional
+.section-data-adic {
+    margin: 8rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .parrafo-1 {
+        margin-right: 2rem;
+        text-shadow: 1px 1px 1px #edf2f4
+    }
+
+
+    .img-masa {
+        border-radius: 2%;
+        border: ridge 1px $color-rojo;
+        width: 24rem;
+    }
+}
+
+.span-anti-br{
+    display:block
+}
+
+//Seccion nuestro menu
+
+article {
+    .div-subtitulo-2 {
+        margin-bottom: 3rem;
+        grid-area: titulo;
+
+        .subtitulo-2 {
+            text-align: center;
+            color: map-get($map: $colores, $key:color-primario );
+            margin: 0.2rem;
+            font-size: 1.5rem;
+            text-shadow: 0.5px 0.5px 0.5px black;
+            
+        }
+    }
+
+    .div-sec-menu {
+        display: grid;
+        grid-template-areas: "titulo titulo titulo"
+            "img1 img2 parrafo"
+            "botonMenu botonMenu botonMenu";
+        align-items: center;
+
+        .div-parrafo-2 {
+            margin: 3.5rem;
+            grid-area: parrafo;
+        }
+
+
+
+
+
+        .div-img-padre-1 {
+            grid-area: img1;
+
+            .div-img-producto {
+                .img-producto-index {
+                    @include img-producto-index;
+                   
+                }
+            }
+
+            .div-titulo-producto {
+                @include divTituloProducto
+            }
+        }
+    }
+
+    .div-img-padre-2 {
+        grid-area: img2;
+
+        .div-img-producto {
+            .img-producto-index {
+                @include img-producto-index
+            }
+        }
+
+
+        .div-titulo-producto {
+            @include divTituloProducto
+        }
+    }
+
+    .boton-ir-menu {
+        @include botones;
+        padding: 10px;
+        grid-area: botonMenu;
+        margin: 1rem auto;
+
+
+
+
+
+
+    }
+
+    .a {
+        @include a
+    }
+}
